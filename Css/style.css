@@ -1,0 +1,654 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+
+}
+
+.sticky + #title {
+    padding-top: 2%;
+}
+
+.nav_container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+
+
+}
+
+.main_nav{
+    background: white;
+    z-index: 1000;
+
+    height: 100px;
+
+
+
+}
+
+.nav_nav{
+
+    display: flex;
+
+
+    justify-content: center;
+
+    height: 100%;
+
+    font-family: Aharoni;
+
+}
+
+.nav_nav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+
+}
+
+
+
+.nav_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 100%;
+}
+
+.nav_nav li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    float: left;
+
+
+}
+
+
+
+.nav_nav a:hover{
+    background: gray;
+}
+
+
+
+
+
+#title{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    height: 600px;
+    font-size: 30px;
+    background: url("../Grafika/title/Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: relative;
+    color: white;
+    padding: 16px;
+    overflow: hidden;
+}
+
+
+#title:hover{
+    opacity: 0.8;
+}
+
+.title_tekst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+position: absolute;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title button{
+    background: white;
+    border-radius: 15px;
+    border: 0;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1em;
+}
+
+#title button:hover{
+    background: green;
+    color: white;
+
+}
+
+.icon{
+    display: none;
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+    .nav_nav{
+        display: none;
+    }
+
+
+}
+
+.nav_nav_small{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 2rem;
+    height:auto;
+    background: white;
+    z-index: 1200;
+    top: 0;
+    left: 50vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav_nav_small a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+
+}
+.nav_nav_small a:hover{
+   color: red;
+}
+
+.nav_nav_small ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#professional{
+    height: 10%;
+    margin: 3%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#professional h1{
+    font-size: 3rem;
+    font-family: "Lobster", Sans-serif;
+}
+
+#professional h3{
+    font-size: 2rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    opacity: 0.7;
+}
+
+#professional_description{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 400px;
+
+
+}
+.description_h5{
+    font-family: "Aparajita", Sans-serif;
+    font-size: 3rem;
+}
+
+.description_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#professional_description p{
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+
+    #professional_description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 1400px;
+
+
+
+    }
+    #professional_description div{
+        padding: 30px;
+    }
+
+
+
+}
+
+#just_relax{
+
+    background-image: url("../Grafika/just relax/tlo_3.png");
+    height: 616px;
+   display: flex;
+    flex-direction: row;
+    background-size: contain;
+
+    padding-left: 5%;
+
+}
+#just_relax .tlo_1{
+
+    background-image: url("../Grafika/just relax/tło_1.png");
+
+    background-repeat: no-repeat;
+    width: 30%;
+   background-size:cover;
+
+
+   height: 616px;
+}
+
+
+#just_relax .tlo_2{
+    background: url("../Grafika/just relax/tlo_2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 616px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+
+}
+#just_relax .tlo_2:hover{
+    opacity: 1.0;
+}
+
+#just_relax .tlo_2 h1{
+    color: orangered;
+    font-size: 2.5rem;
+}
+#just_relax .tlo_2 h5{
+    color: red;
+    font-size: 1.5rem;
+}
+#just_relax .tlo_2 *{
+    padding: 1%;
+}
+.just_relax_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+#just_relax button{
+    background: green;
+    border-radius: 15px;
+    border: 0;
+    color: white;
+    padding: 65px 40px;
+    font-size: 1.5em;
+    opacity: 0.7;
+}
+
+#just_relax button:hover{
+    opacity: 1.0;
+}
+
+.just_relax_buttons *{
+    margin: 4%;
+}
+
+@media screen and (max-width: 650px) {
+
+
+
+    #just_relax .tlo_2 h1{
+        color: orangered;
+        font-size: 2rem;
+    }
+
+    #just_relax .tlo_2 h5{
+        color: red;
+        font-size: 1.0rem;
+    }
+
+    #just_relax .tlo_2 *{
+        padding: 1%;
+    }
+
+    #latest_project{
+        background-image: none;
+    }
+
+}
+
+#latest_project{
+   margin-top: 5%;
+    background-image: url("../Grafika/latest project/background.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 500px, 600px;
+    /*height: 1400px;*/
+    width: 100%;
+    padding: 8%;
+
+}
+
+.latest_project_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Andalus;
+
+}
+
+.latest_project_content{
+    padding: 3%;
+    width: 40%;
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+.latest_project_in_buttons{
+    display: flex;
+    flex-direction: column;
+}
+.latest_project_in_buttons span{
+    color: gray;
+}
+
+@media screen and (max-width: 800px) {
+
+    .latest_project_content{
+        padding: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+
+
+
+    #latest_project{
+        background: none;
+
+    }
+
+}
+
+/*
+@media screen and (max-width: 600px) {
+
+    #latest_project{
+
+        height: 1800px;
+
+    }
+
+    .culture_value_content ._after:after{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    #latest_project{
+
+        height: 2200px;
+
+    }
+
+
+}
+
+*/
+
+#viev_details{
+    color: green;
+    text-decoration: none;
+}
+#culture_values{
+
+    height: 700px;
+    padding: 3%;
+
+}
+.culture_value_header{
+    display: flex;
+    flex-direction: column;
+   font-size: 2rem;
+    align-items: center;
+}
+
+
+.culture_value_content{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.culture_value_content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.culture_value_content span {
+    padding: 3%;
+}
+
+.culture_value_content ._after:after{
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 10%;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+    .culture_value_content ._after:after{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+
+    #culture_values{
+        height: 900px;
+    }
+
+}
+
+#our_awsome{
+    margin-top: 2%;
+   /*height: 1200px;*/
+}
+
+
+
+.our_content{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.our_content span{
+    color: green;
+    font-family: "Bauhaus 93";
+}
+.our_content h3{
+    color: gray;
+    font-family: Vivaldi;
+}
+
+#redy_to_talk{
+    background: url("../Grafika/redy_to_talk/Background.png");
+    height: 450px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#redy_to_talk button{
+    background: url("../Grafika/redy_to_talk/Background.png");
+    border-radius: 15px;
+    border: 4px #f2f2f2 solid;
+    color: white;
+    padding: 15px 10px;
+    font-size: 1.5em;
+
+}
+#redy_to_talk h2{
+    font-family: Aharoni;
+    padding: 4%;
+    margin: 4%;
+}
+#redy_to_talk button:hover{
+   color: #232323;
+    border: 4px black solid;
+
+}
+
+
+
+
+
+
+#logos{
+    margin: 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+#logos *{
+    padding: 1%;
+}
+@media screen and (max-width: 700px) {
+
+    #logos{
+        flex-direction: column;
+    }
+
+
+
+}
+
+#footer_top{
+    background-image: url("../Grafika/footer_top/Background.png");
+background-size: cover;
+    background-repeat: no-repeat;
+
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+   height: auto;
+    justify-content: center;
+    color: #f2f2f2;
+margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    #footer_top{
+       flex-direction: column;
+    }
+
+
+
+}
+
+
+.footer_column{
+    display: flex;
+    flex-direction: column;
+}
+.footer_column *{
+    padding: 2%;
+}
+
+.footer_row span:hover{
+    color: green;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    padding: 1%;
+    margin-left: 5%;
+    display: flex;
+}
+
+footer div *{
+    padding: 5%;
+}
